@@ -3,6 +3,7 @@ package com.ganesh.repository;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import com.ganesh.entity.Student;
 
@@ -91,6 +92,11 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	 
 	 
 	 List<Student> findByNameContaining(String name);
+	 
+	 
+	 
+	 @Query(value = "from Student")
+	 List<Student> getAllStudents();
 		
 	
 	
