@@ -79,6 +79,10 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	 List<Student> findByMarksGreaterThan(Double marks);
 	 
 	 List<Student> findByMarksLessThan(Double marks);
+	 
+	 
+	 
+	 List<Student> findByMarksBetween(Double min, Double max);
 		
 	
 	

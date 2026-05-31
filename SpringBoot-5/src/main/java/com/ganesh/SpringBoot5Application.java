@@ -177,7 +177,14 @@ public class SpringBoot5Application implements CommandLineRunner{
 //		list.forEach(i->System.err.println(i));
 		
 		
-        List<Student> list = studentRepository.findByMarksLessThan(85.00);
+//        List<Student> list = studentRepository.findByMarksLessThan(85.00);
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+		
+		
+		List<Student> list = studentRepository.findByMarksBetween(50.00, 80.00);
 		
 		list.forEach(i->System.err.println(i));
 		
