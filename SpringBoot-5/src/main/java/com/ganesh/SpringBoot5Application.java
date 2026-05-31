@@ -219,11 +219,15 @@ public class SpringBoot5Application implements CommandLineRunner{
 		
 		
 		
-		List<Student> list = studentRepository.getAllStudents();
+//		List<Student> list = studentRepository.getAllStudents();
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+		
+		List<Student> list = studentRepository.getByCity("Pune");
 		
 		list.forEach(i->System.err.println(i));
-		
-		
 		
 		
 		
