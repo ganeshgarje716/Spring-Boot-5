@@ -21,6 +21,9 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	
 	List<Student> findByEmail(String email);
 	
+	List<Student> findByActive(Boolean active);
+	
+	
 	
 	
 	
@@ -44,6 +47,30 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	
 	List<Student> findByCourseOrEmail(String course, String email);
 	
+	
+	
+	
+	
+	 List<Student> findByNameAndCity(String name, String city);
+		
+	 List<Student> findByNameAndMarks(String name, Double marks);
+		
+	 List<Student> findByNameAndCourse(String name, String Course);	
+		
+	 List<Student> findByNameAndEmail(String name, String email);
+		
+   	 List<Student> findByCityAndMarks(String city, Double marks);
+		
+	 List<Student> findByCityAndCourse(String city, String course);	
+		
+	 List<Student> findByCityAndEmail(String city, String email);
+		
+	 List<Student> findByMarksAndCourse(Double marks, String course);
+		
+	 List<Student> findByMarksAndEmail(Double marks, String email);
+		
+	 List<Student> findByCourseAndEmail(String course, String email);
+		
 	
 	
 	

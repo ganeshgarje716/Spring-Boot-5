@@ -52,6 +52,10 @@ public class SpringBoot5Application implements CommandLineRunner{
 //		
 //		email.forEach(i->System.err.println(i));
 		
+//		List<Student> active = studentRepository.findByActive(true);
+//		
+//		active.forEach(i->System.err.println(i));
+		
 		
        
 		
@@ -102,6 +106,62 @@ public class SpringBoot5Application implements CommandLineRunner{
 		
 		
 //		List<Student> list = studentRepository.findByCourseOrEmail("ENTC", "anjali@gmail.com");
+//		
+//		list.forEach(i->System.err.println(i)); 
+		
+		
+		
+		
+		
+		
+		
+		
+//		List<Student> list = studentRepository.findByNameOrCity("Ganesh", "Pune");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByNameAndMarks("Priya", 92.00);
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByNameAndCourse("Vikas", "Civil");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByNameAndEmail("Amit", "amit@gmail.com");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByCityAndMarks("Beed", 74.50);
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByCityAndCourse("Nagpur", "Civil");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByCityAndEmail("Jalgaon", "meena@gmail.com");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByMarksAndCourse(83.5, "Electrical");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByMarksAndEmail(82.00, "kiran@gmail.com");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+//		List<Student> list = studentRepository.findByCourseAndEmail("ENTC", "tejas@gmail.com");
 //		
 //		list.forEach(i->System.err.println(i)); 
 		
