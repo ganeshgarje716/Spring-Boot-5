@@ -70,6 +70,15 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	 List<Student> findByMarksAndEmail(Double marks, String email);
 		
 	 List<Student> findByCourseAndEmail(String course, String email);
+	 
+	 
+	 
+	 
+	 
+	 
+	 List<Student> findByMarksGreaterThan(Double marks);
+	 
+	 List<Student> findByMarksLessThan(Double marks);
 		
 	
 	
