@@ -53,9 +53,7 @@ public class SpringBoot5Application implements CommandLineRunner{
 //		email.forEach(i->System.err.println(i));
 		
 		
-        List<Student> list = studentRepository.findByNameOrCity("Ganesh", "Pune");
-		
-		list.forEach(i->System.err.println(i));
+       
 		
 		
 		
