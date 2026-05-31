@@ -87,6 +87,10 @@ public interface StudentRepository extends JpaRepository<Student, Integer>{
 	 
 	 
 	 List<Student> findByNameLike(String name);
+	 
+	 
+	 
+	 List<Student> findByNameContaining(String name);
 		
 	
 	
