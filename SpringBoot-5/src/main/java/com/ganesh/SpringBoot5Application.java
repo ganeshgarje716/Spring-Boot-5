@@ -184,11 +184,20 @@ public class SpringBoot5Application implements CommandLineRunner{
 		
 		
 		
-		List<Student> list = studentRepository.findByMarksBetween(50.00, 80.00);
+//		List<Student> list = studentRepository.findByMarksBetween(50.00, 80.00);
+//		
+//		list.forEach(i->System.err.println(i));
 		
-		list.forEach(i->System.err.println(i));
 		
 		
+//		List<Student> list = studentRepository.findByNameLike("%a");
+//		
+//		list.forEach(i->System.err.println(i));
+		
+		
+		List<Student> list2 = studentRepository.findByNameLike("a%");
+		
+		list2.forEach(i->System.err.println(i));
 		
 		
 		
